@@ -24,9 +24,7 @@ input file with words (one on each line)
 Example:
 --------
 unsecure-password-generator.py -w john admin wordpress -o passwords.txt 
-
 #uses the words john, admin and wordwpress and outputs to passwords.txt
 
 unsecure-password-generator.py -l -i words.txt 
-
 #uses the --long option and uses words form the file words.txt
