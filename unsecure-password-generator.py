@@ -14,7 +14,12 @@ if args.longerthanlong:
     print("This may take a few secons. Hold on! \n")
 
 #Characters and SH1T
-words = args.words
+if args.input is not None:
+    with open(args.input, 'r') as f:
+        words = f.read().splitlines()
+else:
+    words = args.words
+
 comb_char = "-_+/#%&@."
 spec_char = "@%+\/'!#$?(){}[]~-_."
 counter = 0
