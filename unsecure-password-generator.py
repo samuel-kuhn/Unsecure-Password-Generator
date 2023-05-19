@@ -8,8 +8,17 @@ parser.add_argument("-o", "--output", action="store", help="output file (default
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument("-w", "--words",nargs='+', help="The words that may be in the password (sperated by space)",)
 group.add_argument("-i", "--input", action="store", help="input file with words (one on each line)")
-
 args = parser.parse_args()
+
+banner =  """                                    
+                                            
+  __  ______  ________  _______  __________ 
+ / / / / __ \/ ___/ _ \/ ___/ / / / ___/ _ \\
+/ /_/ / / / (__  )  __/ /__/ /_/ / /  /  __/
+\__,_/_/ /_/____/\___/\___/\__,_/_/   \___/ 
+                                                                                                                                                   
+                        """
+print(banner)
 if args.longerthanlong:
     print("This may take a few secons. Hold on! \n")
 
