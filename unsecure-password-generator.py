@@ -30,7 +30,7 @@ else:
     words = args.words
 
 comb_char = "-_+/#%&@."
-spec_char = "@%+\/'!#$?(){}[]~-_."
+spec_char = [chr(char) for char in range(33, 48)] + [chr(char) for char in range(58, 65)] + [chr(char) for char in range(91, 97)] + [chr(char) for char in range(123, 127)]
 counter = 0
 numbs = ['1', '2', '123', '3', '12', '7', '5', '13', '4', '11', '8', '07', '23', '22', '6', '01', '21', '10', '14', '9', '08', '06', '15', '16', '69', '18', '17', '05', '24', '09', '0', '88', '19', '25', '20', '03', '04', '89', '27', '02', '99', '26', '1234', '101', '77', '28', '33', '00', '2007', '92']
 #numbs are the most common in rockyou.txt

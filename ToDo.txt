@@ -1,0 +1,1 @@
+- add argument to only use common special characters
